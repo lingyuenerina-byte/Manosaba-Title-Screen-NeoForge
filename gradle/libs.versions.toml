@@ -1,0 +1,15 @@
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.252"
+moddev = "2.0.148"
+
+kotlin = "2.1.0"
+compose = "1.7.3"
+shadow = "8.3.5"
+
+[plugins]
+moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }

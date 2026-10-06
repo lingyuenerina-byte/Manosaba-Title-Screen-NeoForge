@@ -1,0 +1,17 @@
+{
+  "music": {
+    "sounds": [
+      "manosaba:music"
+    ]
+  },
+  "ui_submit": {
+    "sounds": [
+      "manosaba:ui_submit"
+    ]
+  },
+  "ui_cancel": {
+    "sounds": [
+      "manosaba:ui_cancel"
+    ]
+  }
+}

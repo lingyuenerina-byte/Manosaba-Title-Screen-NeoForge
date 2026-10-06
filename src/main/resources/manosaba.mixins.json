@@ -1,0 +1,37 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.shiiyuko.manosaba.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "TitleScreenMixin",
+    "SplashOverlayMixin",
+    "MusicManagerMixin",
+    "CreateWorldScreenMixin",
+    "JoinMultiplayerScreenMixin",
+    "NeoForgeLoadingOverlayMixin",
+    "GenericMessageScreenMixin",
+    "ExperimentsScreenMixin",
+    "PackSelectionScreenMixin",
+    "PackSelectionModelMixin",
+    "SelectWorldScreenMixin",
+    "WorldSelectionListMixin",
+    "WorldListEntryAccessor",
+    "DisconnectedScreenMixin",
+    "EditServerScreenMixin",
+    "DirectJoinServerScreenMixin",
+    "ConnectScreenMixin",
+    "EditWorldScreenMixin",
+    "LevelLoadingScreenMixin",
+    "ReceivingLevelScreenMixin",
+    "ProgressScreenMixin",
+    "PauseScreenMixin",
+    "ShareToLanScreenMixin",
+    "StatsScreenMixin",
+    "ModListScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "Apache-2.0"
+
+[[mods]]
+modId = "manosaba"
+version = "${version}"
+displayName = "Manosaba"
+authors = "LingyueNerina, Shiiyuko"
+credits = "基于 Shiiyuko 的 Fabric 版 Manosaba-Title-Screen 移植至 NeoForge 1.21.1"
+description = '''
+一个客户端模组，用于自定义标题屏幕和启动画面，灵感来源于游戏《魔法少女ノ魔女裁判》。
+基于 Shiiyuko 的 Fabric 版 Manosaba-Title-Screen 移植至 NeoForge 1.21.1。
+感谢B站[真寻酱哟-]提供灵感和素材及测试
+'''
+
+[[mixins]]
+config = "manosaba.mixins.json"
+
+[[dependencies.manosaba]]
+modId = "neoforge"
+type = "required"
+# 兼容整个 NeoForge 21.1.x 版本线（对应 Minecraft 1.21.1）；开发编译使用 21.1.252。
+# 不要改回 neoforge_version 占位符写法，否则升级构建依赖时会意外抬高下限并拒载低版本加载器。
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.manosaba]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version},1.21.2)"
+ordering = "NONE"
+side = "CLIENT"
+
+# 运行时 kotlin / kotlinx 由 KotlinForForge 提供（本 jar 不再内嵌，避免与其
+# kotlin.stdlib 模块产生包导出冲突导致游戏启动失败）。5.x 为 Minecraft 1.21.1 版本线。
+[[dependencies.manosaba]]
+modId = "kotlinforforge"
+type = "required"
+versionRange = "[5,)"
+ordering = "NONE"
+side = "CLIENT"
